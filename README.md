@@ -18,27 +18,26 @@
 
 3. What actions can be taken as a long-term solution to the spread of diseases by mosquitoes?
 
-### [Key Findings](https://drive.google.com/open?id=1h8Q0OILcVN8WsiuJV-dEM7mMWq5Y_2k4)
+### [Key Findings](https://drive.google.com/open?id=1GgcDXulfHbrNPDNhaW0eWYGpN-6djV1x)
 
 #### Feature Engineering
 
 Data dictionary:
 
-Feature Name    | Description
-
---------------- | ------------------------------|
-AddressAccuracy | Accuracy score of Address (out of 10)|
-WnvPresent      | Target; West Nile Virus Presence|
-dist_ohare      | linear geographic distance between latlong of observation and latlong of Chicago O'Hare airport|
-dist_mid        | linear geographic distance between latlong of observation and latlong of Chicago Midway airport|
-sprayed         | Area that had been sprayed in the last 3 days|
-temp_spread     | Temperature spread (Tmax - Tmin)|
-PrecipTotal     | Water equivalent (inches & hundredths(2400 LST) rainfall & melted snow|
-Tavg_1          | average temperature in °F|
-r_humidity      | Relative humidity |
-len_day_1       | Length of the day in minutes (Sunset - Sunrise)|
-Species         | CULEX PIPIENS,CULEX PIPIENS/RESTUANS,CULEX RESTUANS, CULEX SALINARIUS, CULEX TARSALIS, CULEX TERRITANS, CULEX UNSPECIFIED|
-month           | Months of May, June, July, October|
+|Feature Name    | Description|
+|--------------- | ------------------------------|
+|AddressAccuracy | Accuracy score of Address (out of 10)|
+|WnvPresent      | Target; West Nile Virus Presence|
+|dist_ohare      | linear geographic distance between latlong of observation and latlong of Chicago O'Hare airport|
+|dist_mid        | linear geographic distance between latlong of observation and latlong of Chicago Midway airport|
+|sprayed         | Area that had been sprayed in the last 3 days|
+|temp_spread     | Temperature spread (Tmax - Tmin)|
+|PrecipTotal     | Water equivalent (inches & hundredths(2400 LST) rainfall & melted snow|
+|Tavg_1          | average temperature in °F|
+|r_humidity      | Relative humidity |
+|len_day_1       | Length of the day in minutes (Sunset - Sunrise)|
+|Species         | CULEX PIPIENS,CULEX PIPIENS/RESTUANS,CULEX RESTUANS, CULEX SALINARIUS, CULEX TARSALIS, CULEX TERRITANS, CULEX UNSPECIFIED|
+|month           | Months of May, June, July, October|
 
 Legend | Description
 ------ | ------------
@@ -47,24 +46,7 @@ T      | Trace
 
 Original data dictionary: [Click to View](https://github.com/chowmun/Project_4/tree/master/assets/noaa_weather_qclcd_documentation.pdf)
 
-#### Modelling Results
-
-##### Logistic Regression
-
-![logreg_classification report](https://github.com/chowmun/Project_4/tree/master/misc/logreg.jpg)
-
-##### XGBoost
-
-![xgboost_classification report](https://github.com/chowmun/Project_4/tree/master/misc/xgboost.jpg)
-
-##### BernoulliNB
-
-![bnl_classification report](https://github.com/chowmun/Project_4/tree/master/misc/bernoullinb.jpg)
-
-#### Limitations
-- absence of meaningful data to address mosquito breeding behaviour
-
-### Recommendations
+#### Recommendations
 1. Maintain healthy levels of natural predators to keep mosquito population at bay
     - Birds, spiders, dragonfly nymphs and diving beetles are natural predators of mosquito larvae, while dragonflies, birds and bats feed on adult mosquitoes.
     - Infected animals cannot transmit to humans unless via a mosquito bite
