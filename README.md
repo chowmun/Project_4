@@ -25,6 +25,7 @@
 Data dictionary:
 
 Feature Name    | Description
+
 --------------- | ------------------------------|
 AddressAccuracy | Accuracy score of Address (out of 10)|
 WnvPresent      | Target; West Nile Virus Presence|
@@ -61,7 +62,6 @@ Original data dictionary: [Click to View](https://github.com/chowmun/Project_4/t
 ![bnl_classification report](https://github.com/chowmun/Project_4/tree/master/misc/bernoullinb.jpg)
 
 #### Limitations
-
 - absence of meaningful data to address mosquito breeding behaviour
 
 ### Recommendations
