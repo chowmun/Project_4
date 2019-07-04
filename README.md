@@ -18,62 +18,60 @@
 
 3. What actions can be taken as a long-term solution to the spread of diseases by mosquitoes?
 
-### Executive Summary
-
-Logistic Regression, XGBoost and BernoulliNB were used to predict WnVPresent. Out of the three models, XXX model gives the best results with precision/recall scores of xx/xx.
-
-Our findings: ![visualisation](https://github.com/chowmun/Project_4/tree/master/misc/proj4_vis.pdf)
+### [Key Findings](https://drive.google.com/open?id=1h8Q0OILcVN8WsiuJV-dEM7mMWq5Y_2k4)
 
 #### Feature Engineering
 
 Data dictionary:
 
 Feature Name    | Description
---------------- | -------------------------------------------------------------------------------------------------------------------------
-AddressAccuracy | Accuracy score of Address (out of 10)
-WnvPresent      | Target; West Nile Virus Presence
-dist_ohare      | Maximum Temperature
-dist_mid        | Minimum Temperature
-sprayed         | Area that had been sprayed in the last 3 days
-temp_spread     | Temperature spread (Tmax - Tmin)
-PrecipTotal     | Water equivalent (inches & hundredths(2400 LST) rainfall & melted snow
-Tavg_1          | average temperature in °F
-r_humidity      | Relative humidity in °C
-len_day_1       | Length of the day in minutes (Sunset - Sunrise)
-Species         | CULEX PIPIENS,CULEX PIPIENS/RESTUANS,CULEX RESTUANS, CULEX SALINARIUS, CULEX TARSALIS, CULEX TERRITANS, CULEX UNSPECIFIED
-month           | Months of May, June, July, October
+
+--------------- | ------------------------------|
+AddressAccuracy | Accuracy score of Address (out of 10)|
+WnvPresent      | Target; West Nile Virus Presence|
+dist_ohare      | linear geographic distance between latlong of observation and latlong of Chicago O'Hare airport|
+dist_mid        | linear geographic distance between latlong of observation and latlong of Chicago Midway airport|
+sprayed         | Area that had been sprayed in the last 3 days|
+temp_spread     | Temperature spread (Tmax - Tmin)|
+PrecipTotal     | Water equivalent (inches & hundredths(2400 LST) rainfall & melted snow|
+Tavg_1          | average temperature in °F|
+r_humidity      | Relative humidity |
+len_day_1       | Length of the day in minutes (Sunset - Sunrise)|
+Species         | CULEX PIPIENS,CULEX PIPIENS/RESTUANS,CULEX RESTUANS, CULEX SALINARIUS, CULEX TARSALIS, CULEX TERRITANS, CULEX UNSPECIFIED|
+month           | Months of May, June, July, October|
 
 Legend | Description
 ------ | ------------
 M      | Missing data
 T      | Trace
 
-Original data dictionary: [Click to Download](~/noaa_weather_qclcd_documentation.pdf)
+Original data dictionary: [Click to View](https://github.com/chowmun/Project_4/tree/master/assets/noaa_weather_qclcd_documentation.pdf)
 
 #### Modelling Results
 
 ##### Logistic Regression
 
-![logreg_classrep](https://github.com/chowmun/Project_4/tree/master/misc/logreg.jpg)
+![logreg_classification report](https://github.com/chowmun/Project_4/tree/master/misc/logreg.jpg)
 
 ##### XGBoost
 
-![xgboost_classrep](https://github.com/chowmun/Project_4/tree/master/misc/XGB.jpg)
+![xgboost_classification report](https://github.com/chowmun/Project_4/tree/master/misc/xgboost.jpg)
 
 ##### BernoulliNB
 
-![bnl_classrep](https://github.com/chowmun/Project_4/tree/master/misc/bnl.jpg)
+![bnl_classification report](https://github.com/chowmun/Project_4/tree/master/misc/bernoullinb.jpg)
 
 #### Limitations
-
 - absence of meaningful data to address mosquito breeding behaviour
 
-#### TL;DR
-
-- Model results
-
-_Visualisation_ ![click here](https://github.com/chowmun/Project_4/tree/master/misc/proj4_vis.pdf)
-
-- Sprays are only effective if done regularly
-- Precipitation correlates with sum of numMosquitos (makes sense as water activates the eggs and is needed for procreation)
-- Temperature has a positive correlation with mosquito activity
+### Recommendations
+1. Maintain healthy levels of natural predators to keep mosquito population at bay
+    - Birds, spiders, dragonfly nymphs and diving beetles are natural predators of mosquito larvae, while dragonflies, birds and bats feed on adult mosquitoes.
+    - Infected animals cannot transmit to humans unless via a mosquito bite
+2. Good mosquito control practices can help reduce mosquito breeding at home
+    - Keep your home mosquito free with this detailed [guide](https://www.researchgate.net/publication/315924484_Best_Practices_for_Integrated_Mosquito_Management_A_Focused_Update)
+    - Trap mosquitos that are currently trespassing in your property. Set a [trap](hhttps://www.wikihow.com/Make-a-Plastic-Bottle-Mosquito-Trap) 
+    - Practice the 3Rs' from the redlineproject [link](http://redlineproject.org/westnilevirus.php)
+3. Read up on West Nile Virus and know what preventive measures to take
+    - [Understand the problem](http://www.idph.state.il.us/public/hb/hbwestnile.htm)
+    - [Preventing West Nile Virus](https://www.chicago.gov/city/en/depts/cdph/supp_info/infectious/preventing_west_nilevirus.html)
