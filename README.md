@@ -18,9 +18,7 @@
 
 3. What actions can be taken as a long-term solution to the spread of diseases by mosquitoes?
 
-### Key Findings
-
-![click here](https://github.com/chowmun/Project_4/tree/master/misc/Project_4_Group_1.pdf)
+### [Key Findings](https://drive.google.com/open?id=1h8Q0OILcVN8WsiuJV-dEM7mMWq5Y_2k4)
 
 #### Feature Engineering
 
@@ -52,15 +50,15 @@ Original data dictionary: [Click to View](https://github.com/chowmun/Project_4/t
 
 ##### Logistic Regression
 
-![logreg_classrep](https://github.com/chowmun/Project_4/tree/master/misc/logreg.jpg)
+![logreg_classification report](https://github.com/chowmun/Project_4/tree/master/misc/logreg.jpg)
 
 ##### XGBoost
 
-![xgboost_classrep](https://github.com/chowmun/Project_4/tree/master/misc/xgboost.jpg)
+![xgboost_classification report](https://github.com/chowmun/Project_4/tree/master/misc/xgboost.jpg)
 
 ##### BernoulliNB
 
-![bnl_classrep](https://github.com/chowmun/Project_4/tree/master/misc/bernoullinb.jpg)
+![bnl_classification report](https://github.com/chowmun/Project_4/tree/master/misc/bernoullinb.jpg)
 
 #### Limitations
 
